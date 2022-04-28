@@ -26,7 +26,6 @@ for i in range(N):
     for j in range(M):
         if lst[i][j] == 0:
             lst_0.append((i,j))
-print(lst[lst_0[1][0]][lst_0[1][1]])
 # for a in range(len(lst_0)-2):
 #     lst[lst_0[a][0]][lst_0[a][1]] = 1
 #     for b in range(a+1, len(lst_0)-1):

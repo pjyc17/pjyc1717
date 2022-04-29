@@ -1,4 +1,6 @@
 from collections import deque
+import sys
+input = sys.stdin.readline
 n, m = map(int, input().split())
 lst = [list(map(int, input().split())) for _ in range(m)]
 cnt = 0
@@ -7,11 +9,9 @@ for i in lst:
     a, b = i[0],i[1]
     graph[a].append(b)
     graph[b].append(a)
-print(graph)
-
     
 visited = [0] * (n+1)
-print(visited)
+
 def bfs(x):
     q = deque([])
     q.append(x)

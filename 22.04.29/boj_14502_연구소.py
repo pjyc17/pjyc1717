@@ -8,7 +8,7 @@ lst = [list(map(int, input().split())) for _ in range(n)]
 def wall(cnt):
     if cnt == 0:
         bfs()
-        return 
+        return
     for i in range(n):
         for j in range(m):
             if lst[i][j] == 0:
